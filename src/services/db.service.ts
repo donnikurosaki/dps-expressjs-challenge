@@ -1,7 +1,7 @@
-import sqlite from 'better-sqlite3';
+import Database from 'better-sqlite3';
 import path from 'path';
 
-const db = new sqlite(path.resolve('./db/db.sqlite3'), {
+const db = new Database(path.resolve('./db/db.sqlite3'), {
 	fileMustExist: true,
 });
 
